@@ -1,0 +1,8 @@
+.page-container {
+  height: 200px;
+
+  @include md {
+    height: 100vh;
+    margin-left: 250px;
+  }
+}

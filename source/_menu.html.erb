@@ -1,0 +1,21 @@
+<div class="logo">
+  <div class="menu-mobile">
+    <span class="fa fa-align-justify js-mobile-menu" aria-hidden="true"></span>
+  </div>
+  <%= image_tag 'images/logo.png', class: 'logo-image'%>
+</div>
+
+<div class="menu">
+  <div class="menu-link">
+    <%= link_to t('menu.home'), '/index.html', class: nav_active('index.html') %>
+  </div>
+  <div class="menu-link">
+    <%= link_to t('menu.about'), '/about.html', class: nav_active('about.html') %>
+  </div>
+  <div class="menu-link">
+    <%= link_to t('menu.portfolio'), '/portfolio.html', class: nav_active('portfolio.html') %>
+  </div>
+  <div class="menu-link">
+    <%= link_to t('menu.contact'), '/contact.html', class: nav_active('contact.html') %>
+  </div>
+</div>

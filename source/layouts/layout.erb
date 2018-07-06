@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "Middleman" %></title>
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Raleway" %>
+    <%= stylesheet_link_tag "//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" %>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="menu-container">
+        <%= partial "menu" %>
+      </div>
+      <div class="page-container">
+        <%= yield %>
+        <div class="footer">
+          <%= partial "footer" %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

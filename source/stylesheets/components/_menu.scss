@@ -1,0 +1,51 @@
+.menu {
+  display: none;
+  margin: 0 40px;
+
+  @include md {
+    display: block;
+  }
+}
+
+.menu-container {
+  width: 100%;
+
+  @include md {
+    height: 100%;
+    position: fixed;
+    width: 250px;
+  }
+}
+
+.menu-link {
+  border-bottom: 1px solid $color-grey;
+  color: $color-black;
+  font-family: $main-font;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+
+  .mod-active {
+    color: $color-red;
+  }
+
+  :hover {
+    color: $color-red;
+    text-decoration: none;
+  }
+
+  @include md {
+    border-bottom: none;
+    padding-bottom: auto;
+    text-transform: uppercase;
+  }
+}
+
+.menu-mobile {
+  left: 50px;
+  top: 70px;
+  position: absolute;
+
+  @include md {
+    display: none;
+  }
+}
