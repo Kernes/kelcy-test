@@ -10,11 +10,20 @@
 .logo-image {
   display: block;
   height: 150px;
-  margin: auto;
   width: 150px;
 
   @include md {
     height: 200px;
     width: 200px;
+  }
+}
+
+.logo-link {
+  margin: auto;
+  max-width: 150px;
+
+  @include md {
+    margin: 0;
+    max-width: auto;
   }
 }
