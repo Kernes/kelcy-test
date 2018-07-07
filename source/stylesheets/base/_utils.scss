@@ -1,0 +1,16 @@
+.slideup, .slidedown {
+  max-height: 0;
+  overflow-y: hidden;
+  -webkit-transition: max-height 0.3s ease-in-out;
+  -moz-transition: max-height 0.3s ease-in-out;
+  -o-transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
+
+  @include md {
+    max-height: none;
+  }
+}
+
+.slidedown {
+  max-height: 200px ;
+}

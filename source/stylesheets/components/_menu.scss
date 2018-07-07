@@ -1,5 +1,4 @@
 .menu {
-  display: none;
   margin: 0 40px;
 
   @include md {
@@ -18,7 +17,6 @@
 }
 
 .menu-link {
-  border-bottom: 1px solid $color-grey;
   color: $color-black;
   font-family: $main-font;
   margin-bottom: 20px;
@@ -26,6 +24,14 @@
 
   .mod-active {
     color: $color-red;
+  }
+
+  &.mod-border {
+    border-bottom: 1px solid $color-grey;
+
+    @include md {
+      border-bottom: none
+    }    
   }
 
   :hover {
