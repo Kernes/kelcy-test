@@ -1,2 +1,2 @@
 //= require jquery.min
-//= require menu
+//= require navigation

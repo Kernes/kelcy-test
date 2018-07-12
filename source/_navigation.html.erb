@@ -1,0 +1,23 @@
+<div class="navigation-mobile">
+  <span class="fa fa-align-justify js-mobile-navigation" aria-hidden="true"></span>
+</div>
+<div class="logo">
+  <% link_to '/', class: 'logo-link' do %>
+     <%= image_tag('images/logo.png', class: 'logo-image') %>
+  <% end %>
+</div>
+
+<div class="navigation slideup js-navigation">
+  <div class="navigation-linkItem mod-border">
+    <%= link_to t('navigation.home'), '/index.html', class: ("navigation-link #{nav_active('index.html')}") %>
+  </div>
+  <div class="navigation-linkItem mod-border">
+    <%= link_to t('navigation.about'), '/about.html', class: ("navigation-link #{nav_active('about.html')}") %>
+  </div>
+  <div class="navigation-linkItem mod-border">
+    <%= link_to t('navigation.portfolio'), '/portfolio.html', class: ("navigation-link #{nav_active('portfolio.html')}") %>
+  </div>
+  <div class="navigation-linkItem">
+    <%= link_to t('navigation.contact'), '/contact.html', class: ("navigation-link #{nav_active('contact.html')}") %>
+  </div>
+</div>

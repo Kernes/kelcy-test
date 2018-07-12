@@ -1,57 +1,22 @@
 .menu {
-  margin: 0 40px;
+  margin: 20px 0;
+  text-align: center;
 
   @include md {
-    display: block;
-  }
-}
-
-.menu-container {
-  width: 100%;
-
-  @include md {
-    height: 100%;
-    position: fixed;
-    width: 250px;
+    text-align: right;
   }
 }
 
 .menu-link {
-  color: $color-black;
-  font-family: $main-font;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
+  color: $color-white;
+  display: inline-block;
+  text-transform: uppercase;
 
-  .mod-active {
-    color: $color-red;
-  }
-
-  &.mod-border {
-    border-bottom: 1px solid $color-grey;
+  &.mod-margin {
+    margin-right: 10px;
 
     @include md {
-      border-bottom: none
-    }    
-  }
-
-  :hover {
-    color: $color-red;
-    text-decoration: none;
-  }
-
-  @include md {
-    border-bottom: none;
-    padding-bottom: auto;
-    text-transform: uppercase;
-  }
-}
-
-.menu-mobile {
-  left: 50px;
-  top: 70px;
-  position: absolute;
-
-  @include md {
-    display: none;
+      margin-right: 50px;
+    }
   }
 }

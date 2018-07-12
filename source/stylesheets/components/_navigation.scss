@@ -1,0 +1,60 @@
+.navigation {
+  margin: 0 40px;
+
+  @include md {
+    display: block;
+  }
+}
+
+.navigation-container {
+  min-width: 200px;
+  width: 100%;
+
+  @include md {
+    border-right: 1px solid $color-orange;
+  }
+}
+
+.navigation-link {
+  color: $color-white;
+
+  &.mod-active {
+    color: $color-greyMedium;
+    font-style: italic;
+  }
+}
+
+.navigation-linkItem {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+
+  &.mod-border {
+    border-bottom: 1px solid $color-grey;
+
+    @include md {
+      border-bottom: none;
+      margin-bottom: none;
+    }    
+  }
+
+  :hover {
+    color: $color-red;
+    text-decoration: none;
+  }
+
+  @include md {
+    border-bottom: none;
+    padding-bottom: auto;
+    text-transform: uppercase;
+  }
+}
+
+.navigation-mobile {
+  left: 70px;
+  top: 70px;
+  position: absolute;
+
+  @include md {
+    display: none;
+  }
+}

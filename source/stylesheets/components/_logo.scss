@@ -1,5 +1,5 @@
 .logo {
-  display: inline-block;
+  text-align: center;
   width: 100%;
 
   @include md {
@@ -8,22 +8,17 @@
 }
 
 .logo-image {
-  display: block;
   height: 150px;
   width: 150px;
 
   @include md {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
 }
 
 .logo-link {
-  margin: auto;
-  max-width: 150px;
-
   @include md {
     margin: 0;
-    max-width: auto;
   }
 }
