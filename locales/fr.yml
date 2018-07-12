@@ -1,4 +1,10 @@
 fr:
+  menu:
+    all: 'Tous'
+    animation: 'Animation'
+    art: '3d art'
+    drawing: 'Illustration'
+    picture: 'Photo'
   navigation:
     about: 'À propos'
     contact: 'Contact'

@@ -1,2 +1,9 @@
-.portfolio-container {
+.portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @include md {
+    justify-content: flex-start;
+  }
 }

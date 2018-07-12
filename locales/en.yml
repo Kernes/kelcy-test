@@ -1,4 +1,10 @@
 en:
+  menu:
+    all: 'All'
+    animation: 'Drawing'
+    art: '3d art'
+    drawing: 'Drawing'
+    picture: 'Picture'
   navigation:
     about: 'About'
     contact: 'Contact'

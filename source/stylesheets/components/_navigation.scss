@@ -12,11 +12,12 @@
 
   @include md {
     border-right: 1px solid $color-orange;
+    max-width: 200px;
   }
 }
 
 .navigation-link {
-  color: $color-white;
+  color: $color-grey;
 
   &.mod-active {
     color: $color-greyMedium;
